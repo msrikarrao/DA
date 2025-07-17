@@ -1,0 +1,14 @@
+students = [
+    ["Alice", 85, 90, 88],
+    ["Bob", 92, 88, 95],
+    ["Charlie", 78, 85, 80],
+    ["David", 90, 92, 91],
+    ["Eva", 88, 84, 90],
+    ["Frank", 82, 79, 85],
+    ["Grace", 95, 91, 89]
+]
+import csv
+with open("zscores.csv", 'w', newline='') as f:
+    fileWriter = csv.writer(f)
+    fileWriter.writerow(["Name", "Subject 1", "Subject 2", "Subject 3"])
+    fileWriter.writerows(students)
