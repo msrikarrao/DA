@@ -33,3 +33,9 @@ Syntax:
 < is for left allignment
 > is for right allignment
 ^ is for 
+
+### WORKING WITH DECIMAL NUMBERS
+- Use the `decimal` module to create decimal numbers that are exact when and don't yield unexpected results
+- We use `Decimal` class from `decimal` module to create decimal numbers, and also we import rounding constants that we need from the decimal module.
+- To create a Decimal object that stores a decimal numbers, pass a string for the decimal number to the constructor ('Decimal(string)') of the Decimal class.
+- It's illegal to code expressions with mixing Decimal with int values. However, it's illegal to code expressions that mix Decimal objects with float values.
